@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="width: 100%; height: 100%;">
 
 <head>
     <meta charset="utf-8">
@@ -17,11 +17,11 @@
     <link rel="stylesheet" href="assets/css/styles.min.css?h=7e95db1fdc045b1c7b4e458934958b14">
 </head>
 
-<body style="text-align: center;background-color: rgb(255,255,255);">
+<body style="text-align: center;background-color: rgb(255,255,255); width: 100%; height: 100%;">
     <!-- Start: sticky dark top nav with dropdown -->
-    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="background-color: rgb(119,6,6);color: rgb(235,230,230);">
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-fixed-top navigation-clean-button" style="background-color: rgb(119,6,6);color: rgb(235,230,230);">
         <div class="container"><a href="index.html" style="color: rgb(254,254,254);font-size: 30px;"><i class="fa fa-home"></i></a>
-            <div><a class="navbar-brand" href="index.html"><span style="color: rgb(7,7,7);"></span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div><a class="navbar-brand" href="index.html"><span style="color: rgb(7,7,7);"></span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon navbar-dark"></span></button></div>
             <div
                 class="collapse navbar-collapse" id="navcol-1" style="background-color: #770606;">
                 <ul class="nav navbar-nav ml-auto nav-right">
@@ -39,9 +39,9 @@
         </div>
     </nav>
     <!-- End: sticky dark top nav with dropdown -->
-    <div style="padding: 40px;background-color: rgb(40,45,50);">
+    <div style="padding:3%; background-color:rgb(40,45,50);">
         <header></header>
-        <h1 class="text-center" style="color: rgb(248,251,251);height: 55px;font-size: 60px;">Religion</h1>
+        <h1 class="text-center" style="color: rgb(248,251,251); font-size: 4rem">Religion</h1>
     </div>
     <p style="font-weight: 500;text-align: left;padding-top: 2%;font-size: 20px;padding: 3%;padding-bottom: 0%;">A religion that has played a critical role in Japan’s history and culture is Shinto. Shinto serves as the native faith of the Japanese people and is as old as Japan itself. Japan’s cosmology, or creation story, begins with the gods Izanagi and Izanami
         who stirred the sea to create the islands from their perch in the heavens above. Deities, or kami, exist everywhere, thus tying the religion closely to all life forms. Shinto’s relationship with the environment also places emphasis on the natural
@@ -49,121 +49,99 @@
     <p style="font-weight: 500;text-align: left;font-size: 20px;padding: 3%;padding-top: 0%;">The Imperial family is said to have descended from the sun goddess Amaterasu, and people of that lineage have since claimed power and authority through a divine right. With this religion as the basis for their ruling system, the Japanese states, intending
         to honor kami and the Imperial family, constructed shrines throughout the country—some of which are depicted throughout items in this section of the exhibition.</p>
     <div></div>
-    <div>
-        <!-- Start: Responsive Left Image Card -->
-        <div class="row" style="margin:0px;padding:20px;">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding:0px;">
-                <div style="background-image: url(&quot;assets/img/Religion1.png?h=b884d21cc8c20d42c88428d7f1b7aa26&quot;);height: 300px;background-repeat: no-repeat;background-size: contain;background-position: center;filter: brightness(80%);"></div>
+    <!-- Start: Image/Text Block -->
+    <div id="main_block" style="margin:0; padding: 1%;">
+
+        <!-- First Image and Text -->
+        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
+            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Religion1.png" style="width: 50%; height: auto;">
             </div>
-            <div class="w-100 d-sm-block d-md-none d-lg-none d-xl-none"></div>
-            <div class="col" style="padding:0px;">
-                <div class="card">
-                    <div class="card-body" style="height: 300px;background-color: rgb(255,255,255);">
-                        <h2 class="text-left card-title" style="color: rgb(33,37,41);">Karamon Gate Shinto Temple Nikko</h2>
-                        <p class="text-left card-text" style="margin: 30px 0 0 0px;">A few years following the introduction of photography (ca. 1843), Japan endured a radical transition known as the <a href="http://afe.easia.columbia.edu/special/japan_1750_meiji.htm">Meiji Restoration&nbsp;</a>(1868-1912). During
-                            this time, a popular type of photography, known as tourist photography, emerged and was driven by an increased demand from Western audiences for “traditional” Japanese images. We see in this seemingly staged photograph, six
-                            figures posed in front of the Karamon Gate at a&nbsp;<a href="https://www.japan-guide.com/e/e2059.html">Shinto Temple</a>. What encompasses these figures in the foreground are trees/forests and a structural entity associated
-                            with religion. This image fits nicely within the context of tourist photography, as what is deemed “traditional” quite often is tied with religion in Japan.</p>
-                    </div>
+            <div class="card col col-md-7 d-flex flex-wrap">
+                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+                    <h2 class="text-left card-title" style="color: rgb(33,37,41);">
+                    Karamon Gate Shinto Temple Nikko
+                    </h2>
+                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">A few years following the introduction of photography (ca. 1843), Japan endured a radical transition known as the <a href="http://afe.easia.columbia.edu/special/japan_1750_meiji.htm">Meiji Restoration&nbsp;</a>(1868-1912). During this time, a popular type of photography, known as tourist photography, emerged and was driven by an increased demand from Western audiences for “traditional” Japanese images. We see in this seemingly staged photograph, six figures posed in front of the Karamon Gate at a&nbsp;<a href="https://www.japan-guide.com/e/e2059.html">Shinto Temple</a>. What encompasses these figures in the foreground are trees/forests and a structural entity associated with religion. This image fits nicely within the context of tourist photography, as what is deemed “traditional” quite often is tied with religion in Japan.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- End: Responsive Left Image Card -->
-        <!-- Start: Responsive Left Image Card -->
-        <div class="row" style="margin:0px;padding:20px;">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding:0px;">
-                <div style="background-image: url(&quot;assets/img/Religion2.png?h=c20fe0418aab043597b28ce169cc1fcc&quot;);height: 300px;background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+
+        <!-- Second Image and Text -->
+        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
+            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Religion2.png" style="width: 80%; height: auto;">
             </div>
-            <div class="w-100 d-sm-block d-md-none d-lg-none d-xl-none"></div>
-            <div class="col" style="padding:0px;">
-                <div class="card">
-                    <div class="card-body" style="height: 300px;">
-                        <h2 class="text-left card-title" style="color: rgb(33,37,41);">The Yomeimon Gate Shinto Temple Kikko</h2>
-                        <p class="text-left card-text" style="margin: 25px 0 0 0px;">Yomeimon Gate to Shinto Toshogu shrine still stands today. Nikko is located North of Tokyo in Tochigi Prefecture. This site is also the mausoleum of the founder and first shōgun of the Tokugawa shogunate, <a href="https://www.britannica.com/biography/Tokugawa-Ieyasu">Tokugawa Ieyasu</a>.
-                            The temple itself was built in the 17th century, much of the carving work done by the potentially mythical Hidari Jingoro, a revered artist from the Edo period. The gate or <em>torii</em> in the foreground marks not only the
-                            entrance to Toshogu but also the change from mundane to sacred. Chosen as a “view” subject for a tourist photography studio, this is indicative of foreign and domestic recognition of the importance to Japan’s recent history
-                            in the face of changing times of modernization intertwined with Western aestheticism.&nbsp;</p>
-                    </div>
+            <div class="card col col-md-7 d-flex flex-wrap">
+                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+                    <h2 class="text-left card-title" style="color: rgb(33,37,41);">The Yomeimon Gate Shinto Temple Kikko
+                    </h2>
+                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">Yomeimon Gate to Shinto Toshogu shrine still stands today. Nikko is located North of Tokyo in Tochigi Prefecture. This site is also the mausoleum of the founder and first shōgun of the Tokugawa shogunate, <a href="https://www.britannica.com/biography/Tokugawa-Ieyasu">Tokugawa Ieyasu</a>. The temple itself was built in the 17th century, much of the carving work done by the potentially mythical Hidari Jingoro, a revered artist from the Edo period. The gate or <em>torii</em> in the foreground marks not only the entrance to Toshogu but also the change from mundane to sacred. Chosen as a “view” subject for a tourist photography studio, this is indicative of foreign and domestic recognition of the importance to Japan’s recent history in the face of changing times of modernization intertwined with Western aestheticism.&nbsp;
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- End: Responsive Left Image Card -->
-        <!-- Start: Responsive Left Image Card -->
-        <div class="row" style="margin:0px;padding:20px;">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding:0px;">
-                <div style="background-image: url(&quot;assets/img/Religion3.png?h=c5bcaff3ae35e6c5057cdbbaa1385a7e&quot;);height: 300px;background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+
+        <!-- Third Image and Text -->
+        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
+            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Religion3.png" style="width: 80%; height: auto;">
             </div>
-            <div class="w-100 d-sm-block d-md-none d-lg-none d-xl-none"></div>
-            <div class="col" style="padding:0px;">
-                <div class="card">
-                    <div class="card-body" style="height: 300px;">
-                        <h2 class="text-left card-title" style="color: rgb(33,37,41);">The Three Monkeys on Stable, Shinto Temple</h2>
-                        <p class="text-left card-text" style="margin: 20px 0 0 0px;">Similarly to the first photo at Nikko shrine Toshogu, this carving remains famous even today. The three wise monkeys carved into the stable represent the proverb, “hear no evil, speak no evil, see no evil” meaning that a person
-                            should conduct themselves in a manner that is always conscious of self. Originally, the phrase is said to have come from China, however, is also seen in other cultures and religious mediums like the Bible as well. In the Japanese
-                            version of this, each monkey is named, starting from left to right, Kikazaru, Iwazaru, and Mizaru. The carving, as well as the rest of the shrine itself, has been attributed again to Hidari Jingoro.&nbsp;The physical location
-                            of the carving is also located within the middle of the shrine grounds.</p>
-                    </div>
+            <div class="card col col-md-7 d-flex flex-wrap">
+                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+                    <h2 class="text-left card-title" style="color: rgb(33,37,41);">The Three Monkeys on Stable, Shinto Temple
+                    </h2>
+                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">Similarly to the first photo at Nikko shrine Toshogu, this carving remains famous even today. The three wise monkeys carved into the stable represent the proverb, “hear no evil, speak no evil, see no evil” meaning that a person should conduct themselves in a manner that is always conscious of self. Originally, the phrase is said to have come from China, however, is also seen in other cultures and religious mediums like the Bible as well. In the Japanese version of this, each monkey is named, starting from left to right, Kikazaru, Iwazaru, and Mizaru. The carving, as well as the rest of the shrine itself, has been attributed again to Hidari Jingoro.&nbsp;The physical location of the carving is also located within the middle of the shrine grounds.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- End: Responsive Left Image Card -->
-        <!-- Start: Responsive Left Image Card -->
-        <div class="row" style="margin:0px;padding:20px;">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding:0px;">
-                <div style="background-image: url(&quot;assets/img/Religion4.png?h=a7a67c50c825bafcd2dc0a4c6c30adfb&quot;);height: 300px;background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+
+        <!-- Fourth Image and Text -->
+        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
+            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Religion4.png" style="width: 80%; height: auto;">
             </div>
-            <div class="w-100 d-sm-block d-md-none d-lg-none d-xl-none"></div>
-            <div class="col" style="padding:0px;">
-                <div class="card">
-                    <div class="card-body" style="height: 300px;">
-                        <h2 class="text-left card-title" style="color: rgb(33,37,41);">The Tomb of Shinto Temple Nikko</h2>
-                        <p class="text-left card-text" style="margin: 20px 0 0 0px;">The tomb portion of the photo’s title refers directly to that of&nbsp;<a href="https://www.britannica.com/biography/Tokugawa-Ieyasu">Tokugawa Ieyasu&nbsp;</a>(1543-1616). A photograph marking the grave of a prominent historical
-                            leader in Japanese history attests to the fascination of the West with the previously isolated country, perhaps exotifying it to some extent. This could even suggest the death of the old Japan at the birth of the new nation.
-                            The view from the side of the tomb emphasizes the meaning of the sacred space. As a tourist photograph, the intended audience is not the Japanese or those to whom the grave holds meaning. Rather, it is the Western foreigners
-                            who are visiting the space and country as a whole for leisure, interest, and spectacle. This photo marks the end of the walking path of the shrine’s grounds.</p>
-                    </div>
+            <div class="card col col-md-7 d-flex flex-wrap">
+                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+                    <h2 class="text-left card-title" style="color: rgb(33,37,41);">The Tomb of Shinto Temple Nikko
+                    </h2>
+                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">The tomb portion of the photo’s title refers directly to that of&nbsp;<a href="https://www.britannica.com/biography/Tokugawa-Ieyasu">Tokugawa Ieyasu&nbsp;</a>(1543-1616). A photograph marking the grave of a prominent historical leader in Japanese history attests to the fascination of the West with the previously isolated country, perhaps exotifying it to some extent. This could even suggest the death of the old Japan at the birth of the new nation. The view from the side of the tomb emphasizes the meaning of the sacred space. As a tourist photograph, the intended audience is not the Japanese or those to whom the grave holds meaning. Rather, it is the Western foreigners who are visiting the space and country as a whole for leisure, interest, and spectacle. This photo marks the end of the walking path of the shrine’s grounds.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- End: Responsive Left Image Card -->
-        <!-- Start: Responsive Left Image Card -->
-        <div class="row" style="margin:0px;padding:20px;">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding:0px;">
-                <div style="background-image: url(&quot;assets/img/Religion5.png?h=ecea0ee5ee237a04765d75098b215b09&quot;);height: 400px;background-repeat: no-repeat;background-size: contain;background-position: center;width: 60%;margin: 0px 0 0 70px;"></div>
+
+        <!-- Fifth Image and Text -->
+        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
+            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Religion5.png" style="width: 50%; height: auto;">
             </div>
-            <div class="w-100 d-sm-block d-md-none d-lg-none d-xl-none"></div>
-            <div class="col" style="padding: 0px;">
-                <div class="card" style="height: 300px;margin-top: 40px;">
-                    <div class="card-body" style="height: 300px;margin: 80px 0 0 0px;">
-                        <h2 class="text-left card-title" style="margin: -70px 0 0 0px;color: rgb(33,37,41);">Woodcut of Torii and Worshippers</h2>
-                        <p class="text-left card-text" style="margin: 30px 0 0 0px;">Scholars and worshippers have acknowledged the role of torii as gateways to the kami, or deities of nature. Most commonly found at the entrance of or within Shinto shrines, the torii symbolically marks the transition from the secular
-                            to the sacred. Often made from wood or stone, torii differ in style and shape, but are somewhat uniform with respect to color. Torii gates are usually red (or burnt orange) or white. The red-painted gates not only appeal to
-                            the eye, but the color itself symbolizes protection against evil and vitality, and, practically speaking, acts as a preservative. In this image, we see people approaching what seems to be a temple, preparing to partake in an
-                            event pertaining to religion.</p>
-                    </div>
+            <div class="card col col-md-7 d-flex flex-wrap">
+                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+                    <h2 class="text-left card-title" style="color: rgb(33,37,41);">Woodcut of Torii and Worshippers
+                    </h2>
+                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">Scholars and worshippers have acknowledged the role of torii as gateways to the kami, or deities of nature. Most commonly found at the entrance of or within Shinto shrines, the torii symbolically marks the transition from the secular to the sacred. Often made from wood or stone, torii differ in style and shape, but are somewhat uniform with respect to color. Torii gates are usually red (or burnt orange) or white. The red-painted gates not only appeal to the eye, but the color itself symbolizes protection against evil and vitality, and, practically speaking, acts as a preservative. In this image, we see people approaching what seems to be a temple, preparing to partake in an event pertaining to religion.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- End: Responsive Left Image Card -->
-        <!-- Start: Responsive Left Image Card -->
-        <div class="row" style="margin:0px;padding:20px;">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4" style="padding:0px;">
-                <div style="background-image: url(&quot;assets/img/Religion6.png?h=e890f948318bf09a9dac92527305833f&quot;);height: 300px;background-repeat: no-repeat;background-size: cover;background-position: center;"></div>
+
+        <!-- Sixth Image and Text -->
+        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
+            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Religion6.png" style="width: 80%; height: auto;">
             </div>
-            <div class="w-100 d-sm-block d-md-none d-lg-none d-xl-none"></div>
-            <div class="col" style="padding:0px;">
-                <div class="card">
-                    <div class="card-body text-left" style="height: 300px;">
-                        <h2 class="card-title" style="color: rgb(33,37,41);">The Nio Gate Buddhist Temple at Nikko</h2>
-                        <p class="card-text" style="margin: 30px 0 0 0px;">Nature is highly respected in Japanese culture, as there often exists a deep spiritual bond between those practicing both Buddhism and Shinto and nature’s inescapable presence. In this image, a figure is captured gazing at the
-                            Nio Gate, within the context of how powerful their surroundings are. The figure’s gaze expresses the belief in existing harmoniously with nature. The way in which the figure is situated in the image also connotes this inescapability
-                            characteristic. Upon glancing at this image, the eye is drawn to the Nio Gate, situated in the middle of the page, yet somewhat in the background. The eye then wanders to the figure, and it then becomes quite obvious that the
-                            figure is captivated and consumed by everything within the frame of the photograph.</p>
-                    </div>
+            <div class="card col col-md-7 d-flex flex-wrap">
+                <div class="card-body" style="height: auto; background-color: rgb(255,255,255);">
+                    <h2 class="text-left card-title" style="color: rgb(33,37,41);">The Nio Gate Buddhist Temple at Nikko
+                    </h2>
+                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">Nature is highly respected in Japanese culture, as there often exists a deep spiritual bond between those practicing both Buddhism and Shinto and nature’s inescapable presence. In this image, a figure is captured gazing at the Nio Gate, within the context of how powerful their surroundings are. The figure’s gaze expresses the belief in existing harmoniously with nature. The way in which the figure is situated in the image also connotes this inescapability characteristic. Upon glancing at this image, the eye is drawn to the Nio Gate, situated in the middle of the page, yet somewhat in the background. The eye then wanders to the figure, and it then becomes quite obvious that the figure is captivated and consumed by everything within the frame of the photograph.
+                    </p>
                 </div>
             </div>
         </div>
-        <!-- End: Responsive Left Image Card -->
     </div>
     <!-- Start: Footer Clean -->
     <div class="footer-clean" style="background-color: rgb(40,45,50);">
