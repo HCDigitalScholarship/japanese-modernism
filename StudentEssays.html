@@ -1,9 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html style="width: 100%; height: 100%; margin:0; padding:0; text-align: center;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+        .a{
+            text-align: center;
+        }
+        @media screen and (max-width: 2000px) {
+            .column {
+                flex: 50%;
+            }
+    
+            .image{
+                width: 80%;
+                height: auto;
+            }
+    
+            .image_v{
+                width: 50%;
+            }
+
+            .header{
+                font-size: 4rem;
+            }
+        }
+    
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+    
+            .image{
+                margin-bottom: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .col-md-5{
+                width: 100%;
+            }
+    
+            .image_v{
+                width: 60%;
+            }
+
+            .header{
+                font-size: 2.5rem;
+            }
+        }
+    
+    </style>
     <title>Romanticized Japan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
@@ -17,11 +66,11 @@
     <link rel="stylesheet" href="assets/css/styles.min.css?h=7e95db1fdc045b1c7b4e458934958b14">
 </head>
 
-<body>
+<body style="text-align: center;background-color: rgb(255,255,255); width: 100%; height: 100%;">
     <!-- Start: sticky dark top nav with dropdown -->
-    <nav class="navbar navbar-light navbar-expand-md navbar-fixed-top navigation-clean-button" style="background-color: rgb(119,6,6);color: rgb(235,230,230);">
+    <nav class="navbar navbar-dark navbar-expand-lg navbar-fixed-top navigation-clean-button" style="background-color: rgb(119,6,6);color: rgb(235,230,230);">
         <div class="container"><a href="index.html" style="color: rgb(254,254,254);font-size: 30px;"><i class="fa fa-home"></i></a>
-            <div><a class="navbar-brand" href="index.html"><span style="color: rgb(7,7,7);"></span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+            <div><a class="navbar-brand" href="index.html"><span style="color: rgb(7,7,7);"></span> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon navbar-dark"></span></button></div>
             <div
                 class="collapse navbar-collapse" id="navcol-1" style="background-color: #770606;">
                 <ul class="nav navbar-nav ml-auto nav-right">
@@ -38,46 +87,66 @@
         </div>
     </nav>
     <!-- End: sticky dark top nav with dropdown -->
-    <div style="padding: 40px;background-color: rgb(40,45,50);">
+    <div style="padding:2%; background-color:rgb(40,45,50);">
         <header></header>
-        <h1 class="text-center" style="color: rgb(251,248,248);height: 55px;font-size: 55px;">Essays</h1>
+        <h1 class="text-center header" style="color: rgb(248,251,251);">Student Essays</h1>
+
     </div>
-    <div style="padding: 3%;font-size: 20px;">
-        <!-- Start: Card-Group Classic -->
-        <div>
-            <div class="container">
-                <div class="cust_bloglistintro"></div>
-                <p class="text-center">These thematic essays are available via the consent of the student authors.</p>
-                <div class="row">
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/Women5.png?h=b706b69be62551ef3d82f0bab4499962" style="margin: -20px 0 0 0px;width: 90%;"></a>
-                        <h3>Advertised Beauty: Idealized Japanese Women in Media during the Meji Era</h3>
-                        <p class="text-secondary">Naomi Stock</p></div>
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/HC12-5607.jpg?h=b52a346bc5a136b9502adde6b5c1521f" style="background-image: url(&quot;assets/img/loft.jpg?h=54cf124094cdfffa04fad3b276c4960d&quot;);margin: -15px 0 0 0px;width: 85%;">
-                        <h3 style="margin: 28px 0 0 0px;">A History of Nikko Through the Lenses of Religion and Nature</h3>
-                        <p class="text-secondary" style="margin: 5px;">Unique Tuberville</p></div>
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/Nature2.png?h=8a97c3687caffdad51195afc1c9254cf" style="height: 232px;margin: -20px 0 0 0pc;">
-                        <h3 class="text-center" style="margin: 30px 0 0 0px;">Censorship in Japanese Museums<br><br></h3>
-                        <p class="text-secondary">Allison Torres</p></div>
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/Nanako.png?h=21306cb3145d93e3b04a4aaae2cc94ce"></a>
-                        <h3>Contrastive Elements in Tourist Photography and Ukiyo-e</h3>
-                        <p class="text-secondary">Nanako Kamatsubara</p></div>
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/Claire.png?h=1107fd5a71b8f3a197c55ef71bb4314e" style="margin: 5px;">
-                        <h3>Fascination with the Imagined and Unknown</h3>
-                        <p class="text-secondary">Claire Mitchell</p></div>
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/Women4.png?h=b03170d8fa65ba7166ce19e559866119" style="height: 230px;margin: 13px 0 0 0px;"></a>
-                        <h3>Hand-Coloring and Its Influence Over Japanese Photographs</h3>
-                        <p class="text-secondary">Eve Rue</p></div>
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/Charlotte.png?h=fc6f671495b8efe522a3d33c88f16c2b"></a>
-                        <h3>Japanese Influence on Western Art</h3>
-                        <p class="text-secondary">Charlotte Skolasky</p></div>
-                    <div class="col-md-4 cust_blogteaser"><img class="img-fluid" src="assets/img/Aleiyah.png?h=3231ce2a406112c29197fdd73c43e052" style="width: 40%;"></a>
-                        <h3 style="margin: 30px 0 0 0px;">The Evolution of Photography in Japan</h3>
-                        <p class="text-secondary">Aleiyah Springer</p></div>
-                </div>
-            </div>
+
+    <p class="text-center" style="margin-top: 3%;"><strong>These thematic essays are available via the consent of the student authors.</strong></p>
+
+    <div class="row" style="padding: 2%;">
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/Women5.png?h=b706b69be62551ef3d82f0bab4499962" style="width: 85%;">
+            <h3>Advertised Beauty: Idealized Japanese Women in Media during the Meji Era</h3>
+            <p class="text-secondary">Naomi Stock</p>
         </div>
-        <!-- End: Card-Group Classic -->
+
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/HC12-5607.jpg?h=b52a346bc5a136b9502adde6b5c1521f" style="width: 85%;">
+            <h3>A History of Nikko Through the Lenses of Religion and Nature</h3>
+            <p class="text-secondary">Unique Tuberville</p>
+        </div>
+
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/Nature2.png?h=8a97c3687caffdad51195afc1c9254cf" style="width: 85%;">
+            <h3 class="text-center">Censorship in Japanese Museums</h3>
+            <p class="text-secondary">Allison Torres</p>
+        </div>
+
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/Nanako.png?h=21306cb3145d93e3b04a4aaae2cc94ce" style="width: 85%;">
+            <h3>Contrastive Elements in Tourist Photography and Ukiyo-e</h3>
+            <p class="text-secondary">Nanako Kamatsubara</p>
+        </div>
+
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/Claire.png?h=1107fd5a71b8f3a197c55ef71bb4314e" style="width: 85%;">
+            <h3>Facination with the Imagined and Unkown</h3>
+            <p class="text-secondary">Claire Mitchell</p>
+        </div>
+
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/Women4.png?h=b03170d8fa65ba7166ce19e559866119" style="width: 85%;">
+            <h3>Hand-Coloring and Its Influence Over Japanese Photographs</h3>
+            <p class="text-secondary">Eve Rue</p>
+        </div>
+
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/Charlotte.png?h=fc6f671495b8efe522a3d33c88f16c2b" style="width: 45%;">
+            <h3>Japanese Influence on Western Art</h3>
+            <p class="text-secondary">Charlotte Skolasky</p>
+        </div>
+
+        <div class="col-md-4 cust_blogteaser">
+            <img class="img-fluid" src="assets/img/Aleiyah.png?h=3231ce2a406112c29197fdd73c43e052" style="width: 45%;">
+            <h3>The Evolution of Photography in Japan</h3>
+            <p class="text-secondary">Aleiyah Springer</p>
+        </div>
     </div>
+
+
+        <!-- End: Card-Group Classic -->
     <!-- Start: Footer Clean -->
     <div class="footer-clean" style="background-color: rgb(40,45,50);">
         <footer>
