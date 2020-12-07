@@ -4,6 +4,54 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .column {
+            flex: 25%;
+            padding: 20px;
+        }
+    
+        @media screen and (max-width: 2000px) {
+            .column {
+                flex: 50%;
+            }
+    
+            .image{
+                width: 80%;
+                height: auto;
+            }
+    
+            .image_v{
+                width: 50%;
+            }
+        }
+    
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+    
+            .image{
+                margin-bottom: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .col-md-5{
+                width: 100%;
+            }
+    
+            .image_v{
+                width: 60%;
+            }
+        }
+    
+    </style>
     <title>Romanticized Japan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
@@ -52,11 +100,11 @@
     <div id="main_block" style="margin:0; padding: 1%;">
 
         <!-- First Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Depictions1.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Depictions1.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Daibatsu at Kamakura
@@ -69,11 +117,11 @@
 
 
         <!-- Second Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Depictions2.png" style="width: 50%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Depictions2.png" class="image image_v">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     69 Sations of the Kisokaido, Niekawa, Takenouchi no Sukune and His Younger Brother Umashiuchi no Sukune
@@ -86,11 +134,11 @@
 
 
         <!-- Third Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Depictions3.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Depictions3.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Lantern Shade Painters
@@ -103,11 +151,11 @@
 
 
         <!-- Fourth Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Depictions4.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Depictions4.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Club Hotel, Yokohama
@@ -120,11 +168,11 @@
 
 
         <!-- Fifth Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Depictions5.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Depictions5.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Man Pulling Cart
@@ -136,11 +184,11 @@
 
 
         <!-- Sixth Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Depictions6.png" style="width: 50%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Depictions6.png" class="image image_v">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Jirikisha at Nekisha, Yokohama
@@ -153,11 +201,11 @@
 
 
         <!-- Seventh Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Depictions7.png" style="width: 50%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Depictions7.png" class="image image_v">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Girls Looking Flowers
