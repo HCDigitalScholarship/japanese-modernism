@@ -4,6 +4,53 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+        @media screen and (max-width: 2000px) {
+            .header{
+                font-size: 3.8rem;
+            }
+
+            .sub_header{
+                font-size: 2.3rem;
+            }
+
+            .image{
+                width: 29%;
+            }
+
+            .final_button{
+                width: 19%;
+            }
+
+            .frame_h{
+                padding-left: 10%;
+                padding-right: 10%;
+            }
+
+        }
+    
+        @media screen and (max-width: 600px) {
+            .header{
+                font-size: 2rem;
+            }
+            
+            .sub_header{
+                font-size: 1.5rem;
+            }
+
+            .image{
+                width: 70%;
+            }
+
+            .final_button{
+                width: 40%;
+            }
+
+            .frame_h{
+                padding: 0;
+            }
+        }
+    </style>
     <title>Romanticized Japan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
@@ -41,31 +88,34 @@
 
     <!-- heading -->
     <div style="margin-top: 1.5%;">
-        <p class="h1" style="font-size: 3.8rem; font-weight: 600; margin-bottom: 0; font-family: 'Roboto Slab'">Romanticized Japan:<p>
+        <p class="header" style="font-weight: 600; margin-bottom: 0; font-family: 'Roboto Slab'">Romanticized Japan:<p>
     </div>
 
     <!-- sub-heading -->
-    <div style="">
-        <p class="h1" style="font-size: 2.3rem; font-weight: 600; font-family: 'Roboto Slab';">Contextualizing Japan Through the Western Gaze<p>
+    <div>
+        <p class="sub_header" style="font-weight: 600; font-family: 'Roboto Slab';">Contextualizing Japan Through the Western Gaze<p>
     </div>
 
     <!-- image div -->
     <div class="row">
-        <img src="assets/img/Cover_Image.png" style="width: 29%; margin-left: auto; margin-right: auto; margin-top: 1.2%;">
+        <img src="assets/img/Cover_Image.png" style="margin-left: auto; margin-right: auto; margin-top: 1.2%;" class="image"> 
     </div>
 
     <!-- final text -->
-    <div class="h3" style="text-align: center; margin-top: 2%">
+    <div class="sub_header" style="text-align: center; margin-top: 2%; padding: 1%;">
         <p style="font-weight: 600">
             An exhibit curated by the students of Japanese Modernism Across Media.
         </p>
     </div>
-    <div style="text-align: center">
-      <iframe title="vimeo-player" src="https://player.vimeo.com/video/472434621" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
+    <!-- the iframe -->
+    <div class="row" style="height: 50%; width: 100%;">
+        <iframe src="https://player.vimeo.com/video/472434621" width="60%" height="100%" style="margin-left: auto; margin-right: auto; margin-bottom: 2%;" frameborder="0" allowfullscreen></iframe>
+    </div>
+    
     <!-- button div -->
     <div class="row">
-        <a type="button" class="btn btn-primary" role="button" href="ExhibitionThemes.html" style="background-color: rgb(119,6,6); margin-left: auto; margin-right: auto; background-position: center; width: 15%; text-align: center;">
+        <a type="button" class="btn btn-primary final_button" role="button" href="ExhibitionThemes.html" style="background-color: rgb(119,6,6); margin-left: auto; margin-right: auto; margin-top: 2%; background-position: center; text-align: center;">
             See Exhibition Objects
         </a>
     </div>
