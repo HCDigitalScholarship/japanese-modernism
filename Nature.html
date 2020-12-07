@@ -1,9 +1,57 @@
 <!DOCTYPE html>
-<html style="width: 100%; height: 100%;">
+<html style="width: 100%; height: 100%; margin: 0; padding: 0">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column {
+        flex: 25%;
+        padding: 20px;
+    }
+
+    @media screen and (max-width: 2000px) {
+        .column {
+            flex: 50%;
+        }
+
+        .image{
+            width: 80%;
+            height: auto;
+        }
+
+        .image_v{
+            width: 50%;
+        }
+    }
+
+    /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 600px) {
+        .row {
+            flex-direction: column;
+        }
+
+        .image{
+            margin-bottom: 10%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .col-md-5{
+            width: 100%;
+        }
+
+        .image_v{
+            width: 60%;
+        }
+    }
+
+    </style>
     <title>Romanticized Japan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
@@ -53,28 +101,29 @@
     <div id="main_block" style="margin:0; padding: 1%;">
 
         <!-- First Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Nature1.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Nature1.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
-                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+            <div class="card col col-md-7 flex-wrap">
+                <div class="card-body" style="height: auto; background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
-                    Wysteria Vine
+                        Wysteria Vine
                     </h2>
-                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">This photograph depicts people standing on a bridge in a traditional Japanese garden. The artist used light touches of color- most evident in the wisteria hanging on the right- that give the photograph a soft, dreamlike quality. Elaborate gardens emerged as a medium in Japan in the Asuka period (538-710). Initially, Japanese gardens were heavily influenced by Chinese gardening techniques, but they developed their own style as time went on, including bridges, flowers, trees, moss, stones, and water. These gardens are a miniaturized version of the Japanese landscape and are based on principles of Shinto, Daoism, and Amida Buddhism. The model of the Japanese garden was very influential across the world and inspired many artists, including the Impressionist Claude Monet and his 1899 painting<em>&nbsp;</em><a href="https://www.nga.gov/collection/art-object-page.74796.html">The Japanese Footbridge</a><em>.&nbsp;</em>
+                    <p class="text-left card-text" style="margin: 30px 0 0 0px;">
+                        This photograph depicts people standing on a bridge in a traditional Japanese garden. The artist used light touches of color- most evident in the wisteria hanging on the right- that give the photograph a soft, dreamlike quality. Elaborate gardens emerged as a medium in Japan in the Asuka period (538-710). Initially, Japanese gardens were heavily influenced by Chinese gardening techniques, but they developed their own style as time went on, including bridges, flowers, trees, moss, stones, and water. These gardens are a miniaturized version of the Japanese landscape and are based on principles of Shinto, Daoism, and Amida Buddhism. The model of the Japanese garden was very influential across the world and inspired many artists, including the Impressionist Claude Monet and his 1899 painting<em>&nbsp;</em><a href="https://www.nga.gov/collection/art-object-page.74796.html">The Japanese Footbridge</a><em>.&nbsp;</em>
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Second Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Nature2.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Nature2.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
-                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+            <div class="card col col-md-7 flex-wrap">
+                <div class="card-body" style="height: auto; background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Fujiyama from Hakone
                     </h2>
@@ -85,12 +134,12 @@
         </div>
 
         <!-- Third Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Nature3.jpg" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Nature3.jpg" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
-                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+            <div class="card col col-md-7 flex-wrap">
+                <div class="card-body" style="height: auto; background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Glorious Fuji, Beloved by Artists and Poets, Seen through Pines at Lake Motosu, Japan
                     </h2>
@@ -101,12 +150,12 @@
         </div>
 
         <!-- Fourth Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Nature4.png" style="width: 50%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Nature4.png" class="image image_v">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
-                <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
+            <div class="card col col-md-7 flex-wrap">
+                <div class="card-body" style="height: auto; background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Ando Hiroshige
                     </h2>
