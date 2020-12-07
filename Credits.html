@@ -4,6 +4,33 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+ 
+        @media screen and (max-width: 2000px) {
+            .image{
+                width: 80%;
+                height: auto;
+            }
+        }
+    
+        /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+    
+            .image{
+                margin-bottom: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    
+    </style>
     <title>Romanticized Japan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
@@ -43,57 +70,61 @@
         <h1 class="text-center" style="color: rgb(248,251,251); font-size: 4rem">Credits</h1>
     </div>
 
-    <!-- heading -->
-    <div class="h2">
-        <br>Curators from <em>Japanese Modernism Across Media</em>, Spring 2020:<br>
-    </div>
+    <div style="padding: 2%;">
 
-    <!-- list 1 -->
-    <div style="text-align: left;">
-        <ul style="padding-left: 5%;">
-            <li style="padding-top: 3%;">Nanako Komatsubara '20<br></li>
-            <li>Claire Mitchell '21</li>
-            <li>Eve Rui '21</li>
-            <li>Charlotte Skolasky '21</li>
-            <li>Aleiyah Springer '20</li>
-            <li>Naomi Stock '20</li>
-            <li>Allison Torres '21</li>
-            <li style="padding-bottom: 3%;">Unique Tuberville '20</li>
-        </ul>
-    </div>
-
-
-    <!-- heading 2-->
-    <div class="h2">
-        Other Contributors
-    </div>
-
-    <!-- list 2 -->
-    <div style="text-align: left;">
-        <ul style="padding-left: 5%;">
-            <li style="padding-top: 3%;">Bruce Bumbarger, Conservator, Libraries<br></li>
-            <li>Sarah Horowitz, Curator of Rare Books &amp; Manuscripts; Head of Quaker &amp; Special Collections, Libraries</li>
-            <li>Erin Schoneveld, Assistant Professor of East Asian Languages and Cultures; Assistant Professor of Visual Studies; Director of Visual Studies</li>
-            <li style="padding-bottom: 3%;">Mike Zarafonetis, Coordinator of Digital Scholarship and Research Services, Libraries</li>
-        </ul>
-    </div>
-
-    <!-- Block of images -->
-    <div class="row" style="margin-top: 7%; margin-bottom: 7%;">
-        <div class="col col-sm-4">
-            <img src="assets/img/HC12-5580.png" width="20%" style="width: 80%;">
+        <!-- heading -->
+        <div class="h2">
+            <br>Curators from <em>Japanese Modernism Across Media</em>, Spring 2020:<br>
         </div>
-        <div class="col col-sm-4">
-            <img src="assets/img/HC12-5554.jpg" width="30%" style="width: 80%;">
-        </div>
-        <div class="col col-sm-4">
-            <img src="assets/img/HC12-5624.jpg" width="20%" style="width: 80%;">
-        </div>
-    </div>
 
-    <!-- other text -->
-    <div>
-        <p style="margin-left: auto; margin-right: auto;">For further information on exhibition images, please visit&nbsp;<a href="http://triarte.brynmawr.edu/">http://triarte.brynmawr.edu/</a>.</p>
+        <!-- list 1 -->
+        <div style="text-align: left;">
+            <ul style="padding-left: 5%;">
+                <li style="padding-top: 3%;">Nanako Komatsubara '20<br></li>
+                <li>Claire Mitchell '21</li>
+                <li>Eve Rui '21</li>
+                <li>Charlotte Skolasky '21</li>
+                <li>Aleiyah Springer '20</li>
+                <li>Naomi Stock '20</li>
+                <li>Allison Torres '21</li>
+                <li style="padding-bottom: 3%;">Unique Tuberville '20</li>
+            </ul>
+        </div>
+
+
+        <!-- heading 2-->
+        <div class="h2">
+            Other Contributors
+        </div>
+
+        <!-- list 2 -->
+        <div style="text-align: left;">
+            <ul style="padding-left: 5%;">
+                <li style="padding-top: 3%;">Bruce Bumbarger, Conservator, Libraries<br></li>
+                <li>Sarah Horowitz, Curator of Rare Books &amp; Manuscripts; Head of Quaker &amp; Special Collections, Libraries</li>
+                <li>Erin Schoneveld, Assistant Professor of East Asian Languages and Cultures; Assistant Professor of Visual Studies; Director of Visual Studies</li>
+                <li style="padding-bottom: 3%;">Mike Zarafonetis, Coordinator of Digital Scholarship and Research Services, Libraries</li>
+            </ul>
+        </div>
+
+        <!-- Block of images -->
+        <div class="row" style="margin-top: 7%; margin-bottom: 7%;">
+            <div class="col col-sm-4">
+                <img src="assets/img/HC12-5580.png" class="image">
+            </div>
+            <div class="col col-sm-4">
+                <img src="assets/img/HC12-5554.jpg" class="image">
+            </div>
+            <div class="col col-sm-4">
+                <img src="assets/img/HC12-5624.jpg" class="image">
+            </div>
+        </div>
+
+        <!-- other text -->
+        <div>
+            <p style="margin-left: auto; margin-right: auto;">For further information on exhibition images, please visit&nbsp;<a href="http://triarte.brynmawr.edu/">http://triarte.brynmawr.edu/</a>.</p>
+        </div>
+
     </div>
 
     <!-- Start: Footer Clean -->
