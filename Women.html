@@ -1,9 +1,54 @@
 <!DOCTYPE html>
-<html style="width: 100%; height: 100%; margin:0; padding:0;">
+<html style="width: 100%; height: 100%;">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        @media screen and (max-width: 2000px) {
+            .image{
+                width: 80%;
+                height: auto;
+            }
+    
+            .image_v{
+                width: 50%;
+            }
+
+            .header{
+                font-size: 4rem;
+            }
+        }
+    
+        @media screen and (max-width: 600px) {
+            .row {
+                flex-direction: column;
+            }
+    
+            .image{
+                margin-bottom: 10%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .col-md-5{
+                width: 100%;
+            }
+    
+            .image_v{
+                width: 60%;
+            }
+
+            .header{
+                font-size: 2.5rem;
+            }
+        }
+    </style>
     <title>Romanticized Japan</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
@@ -38,9 +83,9 @@
         </div>
     </nav>
     <!-- End: sticky dark top nav with dropdown -->
-    <div style="padding:2%; background-color:rgb(40,45,50);">
+    <div style="padding:3%; background-color:rgb(40,45,50);">
         <header></header>
-        <h1 class="text-center" style="color: rgb(248,251,251); font-size: 4rem">Women</h1>
+        <h1 class="text-center header" style="color: rgb(248,251,251);">Women</h1>
 
     </div>
     <p style="font-weight: 500;text-align: left;padding-top: 2%;font-size: 20px;padding: 3%;padding-bottom: 0%;">The Meiji era marked the introduction of Western influence into Japanese society -- this shifted the nation’s social structure, radically changing the daily lives of people. This included the role and expectations of Japanese women: during the Edo
@@ -48,16 +93,16 @@
         of traditional femenine values (Merritt, 126). This portrayal was also prominent in early Japanese photography that came about in the Meiji period that followed (1868 - 1912). Often standing alone, women were beautiful and ethereal; in this way,
         they served as an advertisement for idealized Japanese beauty that was geared towards Japan’s new Western audience. Photos pandered to this foreign perspective: as trade was opened up into Japan, photos were used to capture a stereotyped view
         of Japanese culture. This, of course, included women in a traditional lens. The following pieces speak to this idealized view, and serve as examples of what was seen as the female model in daily life.&nbsp;</p>
-    <div>
+    
     
     <div id="main_block" style="margin:0; padding: 1%;">
 
         <!-- First Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Women1.png" style="width: 50%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Women1.png" class="image image_v">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Two Young Women
@@ -69,11 +114,11 @@
         </div>
 
         <!-- Second Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Women2.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Women2.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Geisha, Gion Street, Kyoto
@@ -85,11 +130,11 @@
         </div>
 
         <!-- Third Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Women3.png" style="width: 50%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Women3.png" class="image image_v">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Japanese Woman with Scroll
@@ -101,11 +146,11 @@
         </div>
 
         <!-- Fourth Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Women4.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Women4.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Playing on Samisen, Fuye, Taiko and Tsuzumi
@@ -117,11 +162,11 @@
         </div>
 
         <!-- Fifth Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Women5.png" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Women5.png" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Woodcut of Kimonoed Woman in a Boat
@@ -133,11 +178,11 @@
         </div>
 
         <!-- Sixth Image and Text -->
-        <div class="row flex d-flex" style="margin:1%; margin-bottom: 5%; display: flex;">
-            <div class="col col-md-5 d-flex flex-wrap" style="margin: 0; padding: 0; width: 40%; display: flex; align-content: center; justify-content: center;">
-                <img src="assets/img/Women6.jpg" style="width: 80%; height: auto;">
+        <div class="row" style="margin: 1%; margin-bottom: 5%;">
+            <div class="col col-md-5 flex-wrap" style="margin: 0; padding: 0; display: flex; align-content: center; justify-content: center;">
+                <img src="assets/img/Women6.jpg" class="image">
             </div>
-            <div class="card col col-md-7 d-flex flex-wrap">
+            <div class="card col col-md-7 flex-wrap">
                 <div class="card-body" style="height: auto;background-color: rgb(255,255,255);">
                     <h2 class="text-left card-title" style="color: rgb(33,37,41);">
                     Crossing the Lake on stepping stones, Suizenji Park, Kumamoto, Japan
@@ -147,22 +192,9 @@
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-
     </div>  
 
 
-
-
-
-
-    </div>
     <!-- Start: Footer Clean -->
     <div class="footer-clean" style="background-color: rgb(40,45,50);">
         <footer>
